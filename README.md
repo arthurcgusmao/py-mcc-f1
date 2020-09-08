@@ -61,7 +61,7 @@ make test
 
 ## License
 
-This package is distributed under the [MIT license](./LICENSE.txt).
+This package is distributed under the [MIT license](./LICENSE).
 
 ## References
 
