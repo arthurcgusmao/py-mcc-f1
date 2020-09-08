@@ -6,11 +6,13 @@ This Python package implements a function to compute the MCC-F1 curve, namely `m
 
 
 ## Installation
+
 ```console
-pip install mcc_f1
+pip install py_mcc_f1
 ```
 
 ## Usage
+
 ```python
 from mcc_f1 import mcc_f1_curve
 
@@ -47,6 +49,7 @@ Please refer to the function's docstring for further comments and details.
 
 
 ## Contributing
+
 If you would like to contribute to this package, please follow the [common community guidelines](https://github.com/MarcDiethelm/contributing).
 
 Please, also keep in mind that the main goal of this project is to be of similar implementation and quality as scikit-learn. Pull requests should pass the existing unit-tests, and add new ones when necessary.
@@ -57,7 +60,9 @@ make test
 ```
 
 ## License
+
 This package is distributed under the [MIT license](./LICENSE.txt).
 
 ## References
+
 1. [[2006.11278] The MCC-F1 curve: a performance evaluation technique for binary classification](https://arxiv.org/abs/2006.11278)
