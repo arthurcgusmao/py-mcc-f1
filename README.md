@@ -8,7 +8,7 @@ This Python package implements a function to compute the MCC-F1 curve, namely `m
 ## Installation
 
 ```console
-pip install py_mcc_f1
+pip install py-mcc-f1
 ```
 
 ## Usage
