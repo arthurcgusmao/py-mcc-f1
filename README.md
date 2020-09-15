@@ -55,6 +55,7 @@ If you would like to contribute to this package, please follow the [common commu
 Please, also keep in mind that the main goal of this project is to be of similar implementation and quality as scikit-learn. Pull requests should pass the existing unit-tests, and add new ones when necessary.
 
 To run the tests:
+
 ```console
 make test
 ```

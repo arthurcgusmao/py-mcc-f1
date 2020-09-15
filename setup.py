@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py-mcc-f1",
-    version="0.0.2",
+    version="0.0.3",
     author="Arthur Colombini Gusmão",
     description="MCC-F1 Curve",
     long_description=long_description,
