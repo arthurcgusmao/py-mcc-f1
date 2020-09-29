@@ -1,10 +1,6 @@
 import numpy as np
 
-try:
-    from sklearn.metrics._ranking import _binary_clf_curve
-except ModuleNotFoundError:
-    # Files in sklearn.metrics were made private after v0.22
-    from sklearn.metrics.ranking import _binary_clf_curve
+from sklearn.metrics._ranking import _binary_clf_curve
 
 
 def mcc_f1_curve(y_true, y_score, *, pos_label=None, sample_weight=None,
