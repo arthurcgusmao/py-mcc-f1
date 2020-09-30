@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py-mcc-f1",
-    version="0.0.3",
+    version="0.1.0",
     author="Arthur Colombini Gusmão",
     description="MCC-F1 Curve",
     long_description=long_description,
@@ -14,7 +14,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy>=1.14.0",
-        "scikit-learn>=0.16"
+        "scikit-learn>=0.22"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

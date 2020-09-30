@@ -14,7 +14,7 @@ pip install py-mcc-f1
 ## Usage
 
 ```python
-from mcc_f1 import mcc_f1_curve
+from mcc_f1 import mcc_f1_curve, plot_mcc_f1_curve
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,15 +28,15 @@ X, y = load_breast_cancer(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 clf = LogisticRegression().fit(X_train, y_train)
 
-# Get predictions and MCC-F1 curve
+# Calculate MCC-F1 metric
+# @TODO
+
+# Get predictions and MCC-F1 curve points
 y_score = clf.predict_proba(X_test)[:,1]
 mcc, f1, thresholds = mcc_f1_curve(y_test, y_score)
 
 # Plot MCC-F1 curve
-plt.figure(figsize=(6,6))
-plt.plot(f1, mcc)
-plt.xlim(0,1)
-plt.ylim(0,1)
+plot_mcc_f1_curve(clf, X_test, y_test)
 ```
 
 Please refer to the function's docstring for further comments and details.
@@ -44,7 +44,7 @@ Please refer to the function's docstring for further comments and details.
 
 ## Future enhancements
 
-- [ ] Function to plot the MCC-F1 curve, (e.g., `plot_precision_recall_curve`), similar to `sklearn/metrics/_plot/precision_recall_curve.py` and `sklearn/metrics/_plot/roc_curve.py`;
+- [x] Function to plot the MCC-F1 curve, (e.g., `plot_mcc_f1_curve`), similar to `sklearn/metrics/_plot/precision_recall_curve.py` and `sklearn/metrics/_plot/roc_curve.py`;
 - [ ] Function to compute the MCC-F1 metric, as defined in section 2.2 of the original paper.
 
 
